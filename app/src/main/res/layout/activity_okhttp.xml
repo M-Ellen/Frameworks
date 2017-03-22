@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_okhttp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gotechcn.frameworks.okhttp.OkHttpActivity">
+
+    <include layout="@layout/titlebar"/>
+
+    <Button
+        android:text="原生get请求"
+        android:id="@+id/btn_okhttp_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="原生post请求"
+        android:id="@+id/btn_okhttp_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="数据显示："
+            android:id="@+id/tv_okhttp_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mvp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.gotechcn.frameworks.mvp.view.UserLoginActivity">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_mvp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName: " />
+
+    <EditText
+        android:id="@+id/et_mvp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_mvp_name" />
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_mvp_name"
+        android:id="@+id/tv_mvp_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_mvp_name"
+        android:text="Password: " />
+
+    <EditText
+        android:layout_below="@id/et_mvp_name"
+        android:id="@+id/et_mvp_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_mvp_password" />
+
+    <Button
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentLeft="true"
+        android:text="login"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_mvp_password"
+        android:id="@+id/btn_mvp_login"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"
+        android:text="cancel"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@id/btn_mvp_login"
+        android:layout_below="@id/tv_mvp_password"
+        android:id="@+id/btn_mvp_cancel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/ProgressBar_mvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
