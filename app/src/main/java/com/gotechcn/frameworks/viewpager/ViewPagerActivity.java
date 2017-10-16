@@ -22,7 +22,7 @@ public class ViewPagerActivity extends Activity {
     private LinearLayout mGroupPoint;
     private TextView mName;
 
-    int [] ids =  {R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d,R.drawable.e};
+    int [] ids =  {R.mipmap.a,R.mipmap.b,R.mipmap.c,R.mipmap.d,R.mipmap.e};
     String [] names = {"女神1","女神2","女神3","女神4","女神5"};
 
     ArrayList<ImageView> mImageViews ;
@@ -193,9 +193,6 @@ public class ViewPagerActivity extends Activity {
             mGroupPoint.getChildAt(position).setEnabled(true);
             mBeforeIndex = position;
 
-            if(isRuning) {
-                handler.sendEmptyMessageDelayed(0, 2000);
-            }
         }
 
         /**
@@ -218,6 +215,9 @@ public class ViewPagerActivity extends Activity {
                     break;
                 case ViewPager.SCROLL_STATE_IDLE://空闲状态
                     System.out.println("onPageScrollStateChanged==SCROLL_STATE_IDLE==空闲状态");
+                    if(isRuning) {
+                        handler.sendEmptyMessageDelayed(0, 2000);
+                    }
                     break;
 
                 default:

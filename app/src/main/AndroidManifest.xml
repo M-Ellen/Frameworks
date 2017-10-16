@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gotechcn.frameworks">
+          package="com.gotechcn.frameworks">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,24 +12,28 @@
         android:theme="@android:style/Theme.Light.NoTitleBar">
         <activity android:name=".WelcomeActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".volley.VolleyActivity" />
-        <activity android:name=".recycleview.RecycleViewActivity" />
-        <activity android:name=".json.JsonActivity" />
-        <activity android:name=".json.GsonActivity" />
-        <activity android:name=".json.FastJsonActivity" />
-        <activity android:name=".git.GitActivity" />
-        <activity android:name=".okhttp.OkHttpActivity" />
-        <activity android:name=".mvp.view.UserLoginActivity" />
-        <activity android:name=".viewpager.ViewPagerActivity" />
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".volley.VolleyActivity"/>
+        <activity android:name=".recycleview.RecycleViewActivity"/>
+        <activity android:name=".json.JsonActivity"/>
+        <activity android:name=".json.GsonActivity"/>
+        <activity android:name=".json.FastJsonActivity"/>
+        <activity android:name=".git.GitActivity"/>
+        <activity android:name=".okhttp.OkHttpActivity"/>
+        <activity android:name=".mvp.view.UserLoginActivity"/>
+        <activity android:name=".viewpager.ViewPagerActivity"/>
         <activity android:name=".RotateMenu.RotateMenuActivity"/>
+        <activity android:name=".Drawables.DrawablesActivity">
+        </activity>
+        <activity android:name=".Drawables.CanvasActivity">
+        </activity>
     </application>
 
 </manifest>

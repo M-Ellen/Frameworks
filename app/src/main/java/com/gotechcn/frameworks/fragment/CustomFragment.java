@@ -6,6 +6,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.gotechcn.frameworks.Drawables.DrawablesActivity;
 import com.gotechcn.frameworks.R;
 import com.gotechcn.frameworks.RotateMenu.RotateMenuActivity;
 import com.gotechcn.frameworks.viewpager.ViewPagerActivity;
@@ -38,7 +39,8 @@ public class CustomFragment extends BaseFragment {
                         startActivity(intent1);
                         break;
                     case 2 :
-
+                        Intent intent2 = new Intent(mContext,DrawablesActivity.class);
+                        startActivity(intent2);
                         break;
                     case 3 :
 
@@ -60,7 +62,7 @@ public class CustomFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        mDatas = new String[]{"viewpager","RotateMenu"};
+        mDatas = new String[]{"Viewpager","RotateMenu","Drawables"};
         //设置适配器
         mAdapter = new CommonFrameFragmentAdapter(mContext, mDatas);
         mListView.setAdapter(mAdapter);
