@@ -11,6 +11,7 @@ import com.gotechcn.frameworks.R;
 import com.gotechcn.frameworks.json.FastJsonActivity;
 import com.gotechcn.frameworks.json.GsonActivity;
 import com.gotechcn.frameworks.json.JsonActivity;
+import com.gotechcn.frameworks.logger.LoggerActivity;
 import com.gotechcn.frameworks.okhttp.OkHttpActivity;
 import com.gotechcn.frameworks.recycleview.RecycleViewActivity;
 import com.gotechcn.frameworks.volley.VolleyActivity;
@@ -60,13 +61,15 @@ public class CommonFrameFragment extends BaseFragment {
                     mContext.startActivity(intent);
                  }
                 else if (data.toLowerCase().equals("fastjson")) {
-                    // 点击条目跳转到手动JSON解析页面
                     Intent intent = new Intent(mContext, FastJsonActivity.class);
                     mContext.startActivity(intent);
                  }
                 else if (data.toLowerCase().equals("okhttp")) {
-                    // 点击条目跳转到手动JSON解析页面
                     Intent intent = new Intent(mContext, OkHttpActivity.class);
+                    mContext.startActivity(intent);
+                 }
+                else if (data.toLowerCase().equals("logger")) {
+                    Intent intent = new Intent(mContext, LoggerActivity.class);
                     mContext.startActivity(intent);
                  }
 
@@ -86,7 +89,7 @@ public class CommonFrameFragment extends BaseFragment {
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
 
         //准备数据
-        mDatas = new String[]{"Volley", "Json", "Gson", "FastJson","RecyclerView", "OkHttp", "Afinal",
+        mDatas = new String[]{"Volley", "Json", "Gson", "FastJson","RecyclerView", "OkHttp", "Logger", "Afinal",
                 "Eventbus","Butterknife","Imageloader","Picasso","Retrofit2", "Fresco", "Glide", "greenDao",
                 "RxJava","jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
 
