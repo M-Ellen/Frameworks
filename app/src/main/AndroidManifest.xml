@@ -33,10 +33,9 @@
         <activity android:name=".mvp.view.UserLoginActivity"/>
         <activity android:name=".viewpager.ViewPagerActivity"/>
         <activity android:name=".RotateMenu.RotateMenuActivity"/>
-        <activity android:name=".Drawables.DrawablesActivity">
-        </activity>
-        <activity android:name=".Drawables.CanvasActivity">
-        </activity>
+        <activity android:name=".customview.CustomViewActivity"></activity>
+        <activity android:name=".customview.CanvasActivity"></activity>
+        <activity android:name=".customview.PaintActivity"></activity>
         <activity android:name=".logger.LoggerActivity">
         </activity>
     </application>

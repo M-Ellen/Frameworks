@@ -1,4 +1,4 @@
-package com.gotechcn.frameworks.Drawables;
+package com.gotechcn.frameworks.customview;
 
 import android.content.Context;
 import android.graphics.Canvas;

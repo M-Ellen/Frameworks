@@ -6,9 +6,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.gotechcn.frameworks.Drawables.DrawablesActivity;
 import com.gotechcn.frameworks.R;
 import com.gotechcn.frameworks.RotateMenu.RotateMenuActivity;
+import com.gotechcn.frameworks.customview.CustomViewActivity;
 import com.gotechcn.frameworks.viewpager.ViewPagerActivity;
 
 /**
@@ -39,7 +39,7 @@ public class CustomFragment extends BaseFragment {
                         startActivity(intent1);
                         break;
                     case 2 :
-                        Intent intent2 = new Intent(mContext,DrawablesActivity.class);
+                        Intent intent2 = new Intent(mContext,CustomViewActivity.class);
                         startActivity(intent2);
                         break;
                     case 3 :
