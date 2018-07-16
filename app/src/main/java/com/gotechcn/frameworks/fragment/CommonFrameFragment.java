@@ -8,6 +8,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.gotechcn.frameworks.R;
+import com.gotechcn.frameworks.eventbus.EventBusActivity;
 import com.gotechcn.frameworks.json.FastJsonActivity;
 import com.gotechcn.frameworks.json.GsonActivity;
 import com.gotechcn.frameworks.json.JsonActivity;
@@ -70,6 +71,10 @@ public class CommonFrameFragment extends BaseFragment {
                  }
                 else if (data.toLowerCase().equals("logger")) {
                     Intent intent = new Intent(mContext, LoggerActivity.class);
+                    mContext.startActivity(intent);
+                 }
+                else if (data.toLowerCase().equals("eventbus")) {
+                    Intent intent = new Intent(mContext, EventBusActivity.class);
                     mContext.startActivity(intent);
                  }
 

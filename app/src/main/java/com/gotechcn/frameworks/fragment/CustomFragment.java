@@ -62,7 +62,7 @@ public class CustomFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        mDatas = new String[]{"Viewpager","RotateMenu","Drawables"};
+        mDatas = new String[]{"Viewpager","RotateMenu","Canvas/Paint"};
         //设置适配器
         mAdapter = new CommonFrameFragmentAdapter(mContext, mDatas);
         mListView.setAdapter(mAdapter);

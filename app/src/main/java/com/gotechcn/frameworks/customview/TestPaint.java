@@ -18,6 +18,7 @@ import android.graphics.MaskFilter;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.graphics.RadialGradient;
 import android.graphics.Shader;
 import android.graphics.SweepGradient;
@@ -55,11 +56,11 @@ public class TestPaint extends View{
 
 //        testInit(canvas);
 
-//        testColor(canvas);
+        testColor(canvas);
 
 //        testEffect(canvas);
 
-        testText(canvas);
+//        testText(canvas);
     }
 
 
@@ -75,6 +76,7 @@ public class TestPaint extends View{
 //        testSweepGradient(canvas);
 //        testBitmapShader1(canvas);
 //        testComposeShader(canvas);
+          TestXfermode(canvas);
     }
 
     private void testEffect(Canvas canvas) {
@@ -229,7 +231,7 @@ public class TestPaint extends View{
 
     private void testComposeShader(Canvas canvas) {
 
-        Bitmap bitmapA = BitmapFactory.decodeResource(getResources(), R.mipmap.e);
+        Bitmap bitmapA = BitmapFactory.decodeResource(getResources(), R.mipmap.composeshader_bg);
         Bitmap bitmapB = BitmapFactory.decodeResource(getResources(), R.mipmap.bitmap6);
 
         Shader shaderA = new BitmapShader(bitmapA, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
@@ -242,6 +244,21 @@ public class TestPaint extends View{
 
     }
 
+    private void TestXfermode(Canvas canvas) {
+
+
+        Bitmap bitmapA = BitmapFactory.decodeResource(getResources(), R.mipmap.composeshader_bg);
+        Bitmap bitmapB = BitmapFactory.decodeResource(getResources(), R.mipmap.bitmap6);
+        int save = canvas.saveLayer(0, 0, bitmapB.getWidth(), bitmapB.getHeight(), mPaint,Canvas.ALL_SAVE_FLAG);
+
+        canvas.drawBitmap(bitmapA, 0, 0, mPaint);
+        mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_IN));//设置 Xfermode
+        canvas.drawBitmap(bitmapB, 0, 0, mPaint);
+        mPaint.setXfermode(null); //用完之后及时清理
+
+        canvas.restoreToCount(save);
+
+    }
 
 
     /*********************颜色 end********************/
