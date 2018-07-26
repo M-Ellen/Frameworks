@@ -77,6 +77,10 @@ public class CommonFrameFragment extends BaseFragment {
                     Intent intent = new Intent(mContext, EventBusActivity.class);
                     mContext.startActivity(intent);
                  }
+                else if (data.toLowerCase().equals("netroid")) {
+                    Intent intent = new Intent(mContext, EventBusActivity.class);
+                    mContext.startActivity(intent);
+                 }
 
                 // 点击位置的显示
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -95,7 +99,7 @@ public class CommonFrameFragment extends BaseFragment {
 
         //准备数据
         mDatas = new String[]{"Volley", "Json", "Gson", "FastJson","RecyclerView", "OkHttp", "Logger", "Afinal",
-                "Eventbus","Butterknife","Imageloader","Picasso","Retrofit2", "Fresco", "Glide", "greenDao",
+                "Eventbus","Netroid", "Butterknife","Imageloader","Picasso","Retrofit2", "Fresco", "Glide", "greenDao",
                 "RxJava","jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
 
         //设置适配器

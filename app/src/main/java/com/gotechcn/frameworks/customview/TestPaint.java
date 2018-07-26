@@ -56,11 +56,11 @@ public class TestPaint extends View{
 
 //        testInit(canvas);
 
-        testColor(canvas);
+//        testColor(canvas);
 
 //        testEffect(canvas);
 
-//        testText(canvas);
+        testText(canvas);
     }
 
 
@@ -91,7 +91,7 @@ public class TestPaint extends View{
 
 //        mTestPaint.setDither(true);   //设置抖动
 
-//        testPathEffec(canvas);
+        testPathEffec(canvas);
 
 //        testShadowLayer(canvas);
 
@@ -104,7 +104,7 @@ public class TestPaint extends View{
 
     private void testText(Canvas canvas) {
 
-//        testDrawText(canvas);
+        testDrawText(canvas);
 
 //        testTypeface(canvas);
 
@@ -114,7 +114,7 @@ public class TestPaint extends View{
 
 //        testTextLocale(canvas);
 
-        testTextPosition(canvas);
+//        testTextPosition(canvas);
 //        testTextPos(canvas);
 
     }
@@ -413,8 +413,7 @@ public class TestPaint extends View{
 
 
     private void testPathEffec(Canvas canvas){
-        TestPathEffec testPathEffec = new TestPathEffec(getContext());
-        testPathEffec.onDraw(canvas);
+        //在 activity_paint.xml 打开 testPathEffec 的布局
     }
 
     private void testShadowLayer(Canvas canvas){

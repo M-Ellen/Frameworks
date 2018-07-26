@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.gotechcn.frameworks.R;
 import com.gotechcn.frameworks.RotateMenu.RotateMenuActivity;
 import com.gotechcn.frameworks.customview.CustomViewActivity;
+import com.gotechcn.frameworks.customview.demo.WaterRippleActivity;
 import com.gotechcn.frameworks.viewpager.ViewPagerActivity;
 
 /**
@@ -31,19 +32,20 @@ public class CustomFragment extends BaseFragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0 :
-                        Intent intent = new Intent(mContext,ViewPagerActivity.class);
-                        startActivity(intent);
-                        break;
-                    case 1 :
-                        Intent intent1 = new Intent(mContext,RotateMenuActivity.class);
-                        startActivity(intent1);
-                        break;
-                    case 2 :
                         Intent intent2 = new Intent(mContext,CustomViewActivity.class);
                         startActivity(intent2);
                         break;
+                    case 1 :
+                        Intent intent = new Intent(mContext,ViewPagerActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 2 :
+                        Intent intent1 = new Intent(mContext,RotateMenuActivity.class);
+                        startActivity(intent1);
+                        break;
                     case 3 :
-
+                        Intent intent3 = new Intent(mContext,WaterRippleActivity.class);
+                        startActivity(intent3);
                         break;
                     case 4:
 
@@ -62,7 +64,7 @@ public class CustomFragment extends BaseFragment {
     protected void initData() {
         super.initData();
         //准备数据
-        mDatas = new String[]{"Viewpager","RotateMenu","Canvas/Paint"};
+        mDatas = new String[]{"Canvas/Paint 基础","Viewpager","RotateMenu","WaterRipple 水波纹进度"};
         //设置适配器
         mAdapter = new CommonFrameFragmentAdapter(mContext, mDatas);
         mListView.setAdapter(mAdapter);

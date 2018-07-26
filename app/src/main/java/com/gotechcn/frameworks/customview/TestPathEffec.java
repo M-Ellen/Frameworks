@@ -46,18 +46,20 @@ public class TestPathEffec extends View{
 
     }
 
+
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         //改变偏移量，是路径流动起来
-//        mPhase += 1;
-//        postInvalidate();
+        mPhase += 2;
+        postInvalidate();
 
-        canvas.translate(0,20);
-        defulatPath(canvas);
-
-        canvas.translate(0,100);
-        testCornerPathEffect(canvas);
+//        canvas.translate(0,20);
+//        defulatPath(canvas);
+//
+//        canvas.translate(0,100);
+//        testCornerPathEffect(canvas);
 
         canvas.translate(0,100);
         testDashPathEffect(canvas);
@@ -69,14 +71,14 @@ public class TestPathEffec extends View{
 //        canvas.translate(0,100);
 //        testPathDashPathEffectStyle(canvas);
 
-        canvas.translate(0,100);
-        testDiscretePathEffect(canvas);
-
-        canvas.translate(0,100);
-        testSumPathEffect(canvas);
-
-        canvas.translate(0,100);
-        testComposePathEffect(canvas);
+//        canvas.translate(0,100);
+//        testDiscretePathEffect(canvas);
+//
+//        canvas.translate(0,100);
+//        testSumPathEffect(canvas);
+//
+//        canvas.translate(0,100);
+//        testComposePathEffect(canvas);
 
 
     }
