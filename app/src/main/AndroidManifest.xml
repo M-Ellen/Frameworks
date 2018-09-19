@@ -46,7 +46,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".customview.demo.WaterRippleActivity"></activity>
+        <activity android:name=".customview.demo.WaterRippleActivity" />
+        <activity android:name=".fresco.FrescoActivity"></activity>
     </application>
 
 </manifest>

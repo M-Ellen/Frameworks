@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 <!--
     <com.gotechcn.frameworks.customview.TestPaint
@@ -21,9 +22,21 @@
     android:layout_height="match_parent"/>
 -->
 
+<!--
     <com.gotechcn.frameworks.customview.TestColorMatrix
         android:background="@color/bg_color_blue"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+-->
 
+    <com.gotechcn.frameworks.customview.TestMatrix
+        android:background="@color/bg_color_blue"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <ImageView
+        android:id="@+id/iv_matrix"
+        android:src="@mipmap/timg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

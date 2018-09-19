@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.gotechcn.frameworks.R;
 import com.gotechcn.frameworks.eventbus.EventBusActivity;
+import com.gotechcn.frameworks.fresco.FrescoActivity;
 import com.gotechcn.frameworks.json.FastJsonActivity;
 import com.gotechcn.frameworks.json.GsonActivity;
 import com.gotechcn.frameworks.json.JsonActivity;
@@ -79,6 +80,10 @@ public class CommonFrameFragment extends BaseFragment {
                  }
                 else if (data.toLowerCase().equals("netroid")) {
                     Intent intent = new Intent(mContext, EventBusActivity.class);
+                    mContext.startActivity(intent);
+                 }
+                else if ("fresco".equals(data.toLowerCase())) {
+                    Intent intent = new Intent(mContext, FrescoActivity.class);
                     mContext.startActivity(intent);
                  }
 

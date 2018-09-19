@@ -1,14 +1,10 @@
 package com.gotechcn.frameworks;
 
 import android.app.Application;
-import android.os.Environment;
-import android.os.Handler;
-import android.os.HandlerThread;
 
-import com.orhanobut.logger.*;
-import com.orhanobut.logger.BuildConfig;
-
-import java.io.File;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 
 
 /**
@@ -60,6 +56,11 @@ public class MyApplication extends Application {
 //
 //        Logger.addLogAdapter(new DiskLogAdapter(formatStrategy));
 
+
+        /**
+         * fresco 使用
+         */
+        Fresco.initialize(this);
 
     }
 }

@@ -24,7 +24,6 @@ public class TestColorMatrix extends View{
 
 
     private Paint mPaint;
-    private Canvas mCanvas;
     private ColorMatrix mColorMatrix;
     private Bitmap mBitmap;
 

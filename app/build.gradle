@@ -36,4 +36,12 @@ dependencies {
     compile 'com.orhanobut:logger:2.1.1'
     compile 'com.duowan.android.netroid:netroid:1.2.1'
     testCompile 'junit:junit:4.12'
+
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+    // 支持 GIF 动图，需要添加
+    implementation 'com.facebook.fresco:animated-gif:1.10.0'
+    // 支持 WebP （静态图+动图），需要添加
+    implementation 'com.facebook.fresco:animated-webp:1.10.0'
+    implementation 'com.facebook.fresco:webpsupport:1.10.0'
+
 }
