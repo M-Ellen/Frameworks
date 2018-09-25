@@ -15,6 +15,7 @@ import com.gotechcn.frameworks.json.GsonActivity;
 import com.gotechcn.frameworks.json.JsonActivity;
 import com.gotechcn.frameworks.logger.LoggerActivity;
 import com.gotechcn.frameworks.okhttp.OkHttpActivity;
+import com.gotechcn.frameworks.pulltorefresh.samples.RefreshActivity;
 import com.gotechcn.frameworks.recycleview.RecycleViewActivity;
 import com.gotechcn.frameworks.volley.VolleyActivity;
 
@@ -82,8 +83,12 @@ public class CommonFrameFragment extends BaseFragment {
                     Intent intent = new Intent(mContext, EventBusActivity.class);
                     mContext.startActivity(intent);
                  }
-                else if ("fresco".equals(data.toLowerCase())) {
+                else if (data.toLowerCase().equals("fresco")) {
                     Intent intent = new Intent(mContext, FrescoActivity.class);
+                    mContext.startActivity(intent);
+                 }
+                else if (data.toLowerCase().equals("pulltorefresh")) {
+                    Intent intent = new Intent(mContext, RefreshActivity.class);
                     mContext.startActivity(intent);
                  }
 

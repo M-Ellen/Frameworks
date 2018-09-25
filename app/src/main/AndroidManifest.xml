@@ -48,6 +48,45 @@
 
         <activity android:name=".customview.demo.WaterRippleActivity" />
         <activity android:name=".fresco.FrescoActivity"></activity>
+
+        <activity
+            android:name=".pulltorefresh.samples.RefreshActivity"
+            android:label="PtR ListView" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshListActivity"
+            android:label="PtR ListView" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshListInViewPagerActivity"
+            android:label="PtR ListView in ViewPager" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshGridActivity"
+            android:label="PtR GridView" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshExpandableListActivity"
+            android:label="PtR ExpandableListView" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshWebViewActivity"
+            android:label="PtR WebView" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshScrollViewActivity"
+            android:label="PtR ScrollView" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshHorizontalScrollViewActivity"
+            android:label="PtR HorizontalScrollView" >
+        </activity>
+        <activity
+            android:name=".pulltorefresh.samples.PullToRefreshWebView2Activity"
+            android:label="PtR WebView Advanced" >
+        </activity>
+
+
     </application>
 
 </manifest>
