@@ -28,8 +28,6 @@ public class TestPath extends View{
     public TestPath(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
-
-
     }
 
     /**
@@ -121,23 +119,21 @@ public class TestPath extends View{
     private void testOffset(Canvas canvas){
         RectF rectF1 = new RectF(100,400,400,600);
 
-
-        Paint paint = new Paint();
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(Color.RED);
+//        Paint paint = new Paint();
+//        paint.setStyle(Paint.Style.STROKE);
+//        paint.setColor(Color.RED);
         Path path = new Path();
-        path.lineTo(200,200);
-        path.arcTo(rectF1, 30,90, false);
-        canvas.drawPath(path,paint);
+//        path.lineTo(200,200);
+//        path.arcTo(rectF1, 30,90, false);
+//        canvas.drawPath(path,paint);
 
         mPaint.setColor(Color.BLACK);
         mPath.lineTo(200,200);
-        mPath.arcTo(rectF1, 30,90, false);
+        mPath.arcTo(rectF1, 30,90, true);
 //        mPath.offset(300,200); 实现平移
 //        mPath.offset(300,200,null); 实现平移，同上
         mPath.offset(300,200,path);//未实现平移，将平移保存在path中
         canvas.drawPath(mPath,mPaint);
-//        canvas.drawPath(path,mPaint);
     }
 
 
@@ -162,7 +158,4 @@ public class TestPath extends View{
         mPath.setFillType(Path.FillType.EVEN_ODD);
         canvas.drawPath(mPath,mPaint);
     }
-
-
-
 }

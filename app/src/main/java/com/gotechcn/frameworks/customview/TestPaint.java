@@ -4,6 +4,7 @@ import java.util.Locale;
 
 import com.gotechcn.frameworks.R;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -23,6 +24,7 @@ import android.graphics.RadialGradient;
 import android.graphics.Shader;
 import android.graphics.SweepGradient;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -104,7 +106,7 @@ public class TestPaint extends View{
 
     private void testText(Canvas canvas) {
 
-        testDrawText(canvas);
+//        testDrawText(canvas);
 
 //        testTypeface(canvas);
 
@@ -115,7 +117,7 @@ public class TestPaint extends View{
 //        testTextLocale(canvas);
 
 //        testTextPosition(canvas);
-//        testTextPos(canvas);
+        fitTextPosition(canvas);
 
     }
 
@@ -569,12 +571,20 @@ public class TestPaint extends View{
         mTestPaint.reset();
         mTestPaint.setTextSize(40);
 
-        mTestPaint.setLetterSpacing(1);
+        /**
+         * api > 21,才有改方法
+         */
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mTestPaint.setLetterSpacing(1);
+        }
         canvas.drawText("有间距的文本", 50, 400, mTestPaint);
 
         //重置画笔
         mTestPaint.reset();
-        mTestPaint.setLetterSpacing(0);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mTestPaint.setLetterSpacing(0);
+        }
         mTestPaint.setTextSize(40);
 
         //设置文本阴影
@@ -750,7 +760,7 @@ public class TestPaint extends View{
     }
 
 
-    private void testTextPos(Canvas canvas){
+    private void fitTextPosition(Canvas canvas){
 
         /**
          * 解决这2个问题
@@ -776,9 +786,8 @@ public class TestPaint extends View{
 //        canvas.drawText(text, getWidth()/2 - textRect.width()/2, getHeight()/2 + textRect.height()/2, mTestPaint);
 
 
-//        mTestPaint.setColor(Color.RED);
-//        mTestPaint.setStrokeWidth(4);
-//
+        mTestPaint.setColor(Color.RED);
+        mTestPaint.setStrokeWidth(2);
         canvas.drawLine(50, Math.abs(top), getWidth(), Math.abs(top),mTestPaint);//第一个问题的参考线
         canvas.drawLine(0, getHeight()/2, getWidth(), getHeight()/2,mTestPaint);//第二个问题的参考线
         canvas.drawLine(getWidth()/2, 0, getWidth()/2, getHeight(),mTestPaint);
