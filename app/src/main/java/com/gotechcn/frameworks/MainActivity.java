@@ -10,7 +10,7 @@ import com.gotechcn.frameworks.fragment.BaseFragment;
 import com.gotechcn.frameworks.fragment.CommonFrameFragment;
 import com.gotechcn.frameworks.fragment.CustomFragment;
 import com.gotechcn.frameworks.fragment.OtherFragment;
-import com.gotechcn.frameworks.fragment.ThirdPartyFragment;
+import com.gotechcn.frameworks.thirdparty.ThirdPartyFragment;
 
 import java.util.ArrayList;
 import java.util.List;
