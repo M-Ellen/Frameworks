@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieDrawable;
 import com.gotechcn.frameworks.R;
 
 public class LottieActivity extends FragmentActivity implements View.OnClickListener {
@@ -32,11 +31,11 @@ public class LottieActivity extends FragmentActivity implements View.OnClickList
         /**
          * 使用代码设置动画
          */
-        animationView = findViewById(R.id.animation_view);
-        animationView.setAnimation(R.raw.material_wave_loading);//加载json文件
-        animationView.setRepeatMode(LottieDrawable.REVERSE);//设置循环
-        animationView.setRepeatCount(-1);//设置循环
-        animationView.playAnimation(); //播放动画
+//        animationView = findViewById(R.id.animation_view);
+//        animationView.setAnimation(R.raw.material_wave_loading);//加载json文件
+//        animationView.setRepeatMode(LottieDrawable.REVERSE);//设置循环
+//        animationView.setRepeatCount(-1);//设置循环
+//        animationView.playAnimation(); //播放动画
 //
 //        /**
 //         * 添加监听

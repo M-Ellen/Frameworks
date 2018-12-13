@@ -1,7 +1,84 @@
 <resources>
     <string name="app_name">"Frameworks "</string>
+    <string name="title">"Android框架"</string>
+    <string name="MaterialDesigntitle">"MaterialDesign学习"</string>
 
     <string name="hello">Hello World, PullToRefreshActivity!</string>
     <string name="filler_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mauris varius lacus porttitor eget blandit massa facilisis. Nulla pellentesque odio sed purus fermentum vitae viverra orci faucibus. Sed ullamcorper condimentum vulputate. Curabitur sit amet convallis velit. Vestibulum posuere eleifend risus ac adipiscing. Nam pulvinar nulla a velit faucibus imperdiet. Praesent eget nisi ac justo blandit sagittis. Maecenas at leo nisi, nec varius nisl.\nIn hac habitasse platea dictumst. Morbi neque tortor, vestibulum sed viverra a, luctus vel lorem. Nunc turpis eros, varius eget commodo et, euismod at eros. Sed tincidunt mi purus, vel posuere dui. Vestibulum ante lectus, porta sed mattis bibendum, scelerisque cursus sapien. Cras ultrices imperdiet fermentum. Aenean nisi nulla, euismod non blandit ac, dictum quis libero. Morbi consectetur tempor mollis. Suspendisse eget nunc arcu, vel ullamcorper augue. Integer malesuada, diam nec faucibus mollis, nisl velit euismod enim, ac mattis justo neque sit amet mauris. Vivamus pretium imperdiet pharetra.\nInteger sagittis augue sit amet lectus pulvinar sit amet commodo tortor mattis. Maecenas quis tellus eget ante eleifend sollicitudin non et nibh. Maecenas luctus euismod tristique. Fusce in odio nec diam blandit facilisis. Sed nec arcu eros. Vivamus quis tortor a metus tempus aliquam eget volutpat magna. Pellentesque id ultrices dolor. Sed blandit aliquet quam. Phasellus dapibus euismod vulputate. Aenean blandit, elit vitae vestibulum tincidunt, metus dui accumsan nulla, sit amet vehicula mauris lacus in est. Etiam dignissim pellentesque nulla vel malesuada. Cras vel lorem justo.\nSed condimentum nisl sit amet libero vestibulum hendrerit. Duis auctor tempus placerat. Proin velit ante, ornare nec dictum nec, hendrerit eu arcu. Etiam ut diam ornare quam venenatis pulvinar vitae vel leo. Vivamus consectetur, ante id interdum rhoncus, magna eros pulvinar lacus, a gravida nibh arcu vitae eros. Nulla scelerisque laoreet feugiat. Mauris sit amet gravida felis.\nNulla ac dolor sapien, vestibulum venenatis justo. Cras placerat velit vitae nibh pellentesque ultricies. Suspendisse adipiscing enim eu justo iaculis eu pretium urna fermentum. Duis porttitor nunc non nunc mattis vestibulum. Etiam elit tellus, feugiat in bibendum eget, adipiscing nec metus. Ut ut sem lacus, quis faucibus diam. Curabitur a nulla fermentum tortor dignissim posuere. Fusce faucibus ante ut sem imperdiet imperdiet eget vitae lorem. Etiam fringilla ornare ipsum, in sagittis quam ornare vitae. Nullam venenatis orci sit amet sapien adipiscing gravida. Proin turpis lectus, hendrerit vitae vehicula ut, auctor ac lectus. Pellentesque sollicitudin blandit ligula quis commodo. Mauris vulputate lectus in velit luctus aliquam. Quisque eget tincidunt elit. Quisque et augue quam, sed scelerisque eros.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="app_bar_text">
+其滚动模式有以下5种：\n\n
+scroll:值设为scroll的Child View会跟随滚动事件一起发生移动。\n
+
+（注意：如果使用了其他模式值，必定要使用这个值合并才能起作用，如 scroll | enterAlways；不然没有效果。）
+\n\n
+enterAlways:快速返回模式。其实就是向下滚动时Scrolling View和Child View之间的滚动优先级问题。
+对比scroll 和 scroll|enterAlways 设置，发生向下滚动事件时，前者优先滚动Scrolling View，后者优先滚动Child View，当优先滚动的一方已经全部滚进屏幕之后，另一方才开始滚动。
+
+\n\n
+enterAlwaysCollapsed: enterAlways的附加值。这里涉及到Child View的高度和最小高度，向下滚动时，Child View先向下滚动最小高度值，
+然后Scrolling View开始滚动，到达边界时，Child View再向下滚动，直至显示完全。
+
+\n\n
+exitUntilCollapsed: 发生向上滚动事件时，Child View向上滚动退出直至最小高度，然后Scrolling View开始滚动。也就是，Child View不会完全退出屏幕。
+
+\n\n
+snap: 简单理解，就是Child View滚动比例的一个吸附效果。也就是说，Child View不会存在局部显示的情况，滚动Child View的部分高度，当我们松开手指时，Child View要么向上全部滚出屏幕，要么向下全部滚进屏幕，有点类似ViewPager的左右滑动。
+
+\n\n
+以上几种模式可以参考：
+https://www.jianshu.com/p/7caa5f4f49bd
+    </string>
+
+
+    <string name="CollapsingToolbar_text">
+CollapsingToolbarLayout是用来对Toolbar进行再次包装的ViewGroup，主要是用于实现折叠（其实就是看起来像伸缩~）的App Bar效果。
+它需要放在AppBarLayout布局里面，并且作为AppBarLayout的直接子View。CollapsingToolbarLayout主要包括几个功能:
+
+\n\n
+(1) 折叠Title（Collapsing title）：当布局内容全部显示出来时，title是最大的，但是随着View逐步移出屏幕顶部，title变得越来越小。你可以通过调用setTitle()函数来设置title。
+
+\n\n
+(2)内容纱布（Content scrim）：根据滚动的位置是否到达一个阀值，来决定是否对View“盖上纱布”。可以通过setContentScrim(Drawable)来设置纱布的图片.
+
+\n\n
+(3)状态栏纱布（Status bar scrim)：根据滚动位置是否到达一个阀值决定是否对状态栏“盖上纱布”，你可以通过setStatusBarScrim(Drawable)来设置纱布图片，但是只能在LOLLIPOP设备上面有作用。
+
+\n\n
+(4)视差滚动子View(Parallax scrolling children):子View可以选择在当前的布局当时是否以“视差”的方式来跟随滚动。（PS:其实就是让这个View的滚动的速度比其他正常滚动的View速度稍微慢一点）。将布局参数app:layout_collapseMode设为parallax
+
+\n\n
+(5)将子View位置固定(Pinned position children)：子View可以选择是否在全局空间上固定位置，这对于Toolbar来说非常有用，因为当布局在移动时，可以将Toolbar固定位置而不受移动的影响。 将app:layout_collapseMode设为pin。
+
+    </string>
+
+
+    <string name="drawerLayout_text">
+抽屉式导航栏是一个面板，它将应用的主要导航选项显示在屏幕左边缘。大多数情况下，它处于隐藏状态，但是如果用户从屏幕左边缘滑动手指，同时在应用顶层触摸操作栏中的应用图标，它将会显示出来。
+
+\n\n
+创建抽屉式导航栏布局
+\n
+要添加抽屉式导航栏，请将包含 DrawerLayout 对象的用户界面声明为布局的根视图。
+在 DrawerLayout 内，添加一个包含屏幕主内容（当抽屉式导航栏处于隐藏状态时为主要布局）的视图和另一个包含抽屉式导航栏内容的视图。
+\n\n
+一些重要的布局特性：
+\n
+在 DrawerLayout 中，主内容视图（上面的 FrameLayout）必须是第一个子视图，因为 XML 顺序意味着按 z 序（层叠顺序）排序，并且抽屉式导航栏必须位于内容顶部。
+主内容视图设置为匹配父视图的宽度和高度， 因为在抽屉式导航栏处于隐藏状态时， 它代表整个 UI。
+\n
+抽屉式导航栏视图 (ListView) 必须使用 android:layout_gravity 属性指定其水平重力。要支持“从右到左”(RTL) 语言，请使用 "start"（而非 "left"）指定该值（这样当布局为 RTL 时，抽屉式导航栏会显示在右侧）。
+\n
+抽屉式导航栏视图以 dp 为单位指定其宽度， 且高度与父视图相匹配。抽屉式导航栏的宽度不应超过 320dp，从而用户始终可以看到部分主内容。
+    </string>
+
+    <string name="title_activity_drawer_layout">DrawerLayoutActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_text_input_layout">TextInputLayoutActivity</string>
 
 </resources>

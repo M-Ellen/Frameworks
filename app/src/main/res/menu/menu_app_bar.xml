@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/app_bar_menu_search">
+
+        <item
+            app:actionViewClass="android.support.v7.widget.SearchView"
+            app:showAsAction="ifRoom|collapseActionView"
+            android:icon="@mipmap/icon_search"
+            android:id="@+id/search_bar"
+            android:title="search">
+
+        </item>
+
+    </group>
+
+    <group android:id="@+id/app_bar_menu">
+
+        <item
+            android:icon="@mipmap/icon_menu"
+            android:id="@+id/app_bar_menu_scroll"
+            android:orderInCategory="100"
+            android:title="scroll"/>
+        <item
+            android:orderInCategory="100"
+            android:id="@+id/app_bar_menu_enterAlways"
+            android:title="enterAlways"/>
+        <item
+            android:orderInCategory="100"
+            android:id="@+id/app_bar_menu_enterAlwaysCollapsed"
+            android:title="enterAlwaysCollapsed"/>
+        <item
+            android:orderInCategory="100"
+            android:id="@+id/app_bar_menu_exitUntilCollapsed"
+            android:title="exitUntilCollapsed"/>
+        <item
+            android:orderInCategory="100"
+            android:id="@+id/app_bar_menu_snap"
+            android:title="snap"/>
+    </group>
+</menu>

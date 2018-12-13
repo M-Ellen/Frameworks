@@ -8,12 +8,11 @@
 
     <application
         android:name=".MyApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@android:style/Theme.Light.NoTitleBar">
+        android:theme="@style/AppTheme">
         <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +30,7 @@
         <activity android:name=".json.FastJsonActivity" />
         <activity android:name=".git.GitActivity" />
         <activity android:name=".okhttp.OkHttpActivity" />
-        <activity android:name=".mvp.view.UserLoginActivity" />
+        <activity android:name=".other.mvp.view.UserLoginActivity" />
         <activity android:name=".viewpager.ViewPagerActivity" />
         <activity android:name=".RotateMenu.RotateMenuActivity" />
         <activity android:name=".customview.CustomViewActivity" />
@@ -50,32 +49,52 @@
         <activity android:name=".fresco.FrescoActivity" />
         <activity
             android:name=".pulltorefresh.samples.RefreshActivity"
-            android:label="PtR ListView"></activity>
+            android:label="PtR ListView" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshListActivity"
-            android:label="PtR ListView"></activity>
+            android:label="PtR ListView" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshListInViewPagerActivity"
-            android:label="PtR ListView in ViewPager"></activity>
+            android:label="PtR ListView in ViewPager" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshGridActivity"
-            android:label="PtR GridView"></activity>
+            android:label="PtR GridView" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshExpandableListActivity"
-            android:label="PtR ExpandableListView"></activity>
+            android:label="PtR ExpandableListView" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshWebViewActivity"
-            android:label="PtR WebView"></activity>
+            android:label="PtR WebView" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshScrollViewActivity"
-            android:label="PtR ScrollView"></activity>
+            android:label="PtR ScrollView" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshHorizontalScrollViewActivity"
-            android:label="PtR HorizontalScrollView"></activity>
+            android:label="PtR HorizontalScrollView" />
         <activity
             android:name=".pulltorefresh.samples.PullToRefreshWebView2Activity"
-            android:label="PtR WebView Advanced"></activity>
-        <activity android:name=".thirdparty.lottie.LottieActivity"></activity>
+            android:label="PtR WebView Advanced" />
+        <activity android:name=".thirdparty.lottie.LottieActivity" />
+        <activity android:name=".other.MaterialDesign.MaterialDesignActivity" />
+        <activity
+            android:name=".other.MaterialDesign.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".other.MaterialDesign.CardViewActivity" />
+        <activity android:name=".other.MaterialDesign.AppBarActivity" />
+        <activity android:name=".other.MaterialDesign.CollapsingToolbarActivity" />
+        <activity
+            android:name=".other.MaterialDesign.DrawerLayoutActivity"
+            android:label="@string/title_activity_drawer_layout"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".other.MaterialDesign.FloatingActionButtonActivity" />
+        <activity android:name=".other.MaterialDesign.SnackbarActivity" />
+        <activity
+            android:name=".other.MaterialDesign.TextInputActivity"
+            android:label="@string/title_activity_text_input_layout"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".other.MaterialDesign.TabLayoutActivity" />
+        <activity android:name=".other.MaterialDesign.AnimationActivity"></activity>
     </application>
 
 </manifest>

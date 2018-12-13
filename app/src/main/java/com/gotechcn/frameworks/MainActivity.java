@@ -2,14 +2,14 @@ package com.gotechcn.frameworks;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.RadioGroup;
 
-import com.gotechcn.frameworks.fragment.BaseFragment;
 import com.gotechcn.frameworks.fragment.CommonFrameFragment;
 import com.gotechcn.frameworks.fragment.CustomFragment;
-import com.gotechcn.frameworks.fragment.OtherFragment;
+import com.gotechcn.frameworks.other.OtherFragment;
 import com.gotechcn.frameworks.thirdparty.ThirdPartyFragment;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import java.util.List;
  * QQ号：541433511
  * 作用：主页面
  */
-public class MainActivity  extends FragmentActivity{
+public class MainActivity  extends AppCompatActivity{
 
     private RadioGroup mRg_main;
     private List<BaseFragment> mBaseFragment;
@@ -149,6 +149,14 @@ public class MainActivity  extends FragmentActivity{
 
     private void initView() {
         setContentView(R.layout.activity_main);
+
+        //init toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        // 设置给Activity
+        toolbar.setTitle(R.string.title);
+//        toolbar.setSubtitle(R.string.app_name);
+        setSupportActionBar(toolbar);
+
         mRg_main = (RadioGroup) findViewById(R.id.rg_main);
 
     }

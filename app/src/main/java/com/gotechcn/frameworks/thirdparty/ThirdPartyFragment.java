@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.gotechcn.frameworks.R;
-import com.gotechcn.frameworks.fragment.BaseFragment;
+import com.gotechcn.frameworks.BaseFragment;
 import com.gotechcn.frameworks.recycleview.DividerListItemDecoration;
 import com.gotechcn.frameworks.thirdparty.lottie.LottieActivity;
 

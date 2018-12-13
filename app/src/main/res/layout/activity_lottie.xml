@@ -21,10 +21,10 @@
     <!--使用 lottie_rawRes 来加载文件，！！！官方更推荐这种！！！-->
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/network_error" />
+        app:lottie_rawRes="@raw/newanimation" />
 
     <!--使用 lottie_rawRes 来加载文件，！！！官方更推荐这种！！！-->
     <com.airbnb.lottie.LottieAnimationView
@@ -51,7 +51,26 @@
         app:lottie_fileName="WeAccept.json"
         app:lottie_imageAssetsFolder="images/"
         app:lottie_loop="true" />
-        <!--app:lottie_fileName="submit button.json"-->
+    <!--app:lottie_fileName="submit button.json"-->
+
+
+<!--    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/data"
+        app:lottie_imageAssetsFolder="images/dataImages/"
+        app:lottie_loop="true" />-->
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/achieve"
+        app:lottie_imageAssetsFolder="images/achievement/"
+        app:lottie_loop="true" />
+
 
 
     <LinearLayout

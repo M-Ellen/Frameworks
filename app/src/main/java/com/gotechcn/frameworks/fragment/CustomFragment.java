@@ -6,6 +6,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.gotechcn.frameworks.BaseFragment;
 import com.gotechcn.frameworks.R;
 import com.gotechcn.frameworks.RotateMenu.RotateMenuActivity;
 import com.gotechcn.frameworks.customview.CustomViewActivity;
