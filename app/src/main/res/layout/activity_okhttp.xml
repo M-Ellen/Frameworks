@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.gotechcn.frameworks.okhttp.OkHttpActivity">
+    tools:context=".common.okhttp.OkHttpActivity">
 
     <include layout="@layout/titlebar"/>
 

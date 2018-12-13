@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.gotechcn.frameworks.R;
-import com.gotechcn.frameworks.fragment.CommonFrameFragmentAdapter;
+import com.gotechcn.frameworks.common.CommonFrameFragmentAdapter;
 
 public class MaterialDesignActivity extends AppCompatActivity {
 

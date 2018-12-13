@@ -23,56 +23,56 @@
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
-        <activity android:name=".volley.VolleyActivity" />
-        <activity android:name=".recycleview.RecycleViewActivity" />
-        <activity android:name=".json.JsonActivity" />
-        <activity android:name=".json.GsonActivity" />
-        <activity android:name=".json.FastJsonActivity" />
+        <activity android:name=".common.volley.VolleyActivity" />
+        <activity android:name=".common.recycleview.RecycleViewActivity" />
+        <activity android:name=".common.json.JsonActivity" />
+        <activity android:name=".common.json.GsonActivity" />
+        <activity android:name=".common.json.FastJsonActivity" />
         <activity android:name=".git.GitActivity" />
-        <activity android:name=".okhttp.OkHttpActivity" />
+        <activity android:name=".common.okhttp.OkHttpActivity" />
         <activity android:name=".other.mvp.view.UserLoginActivity" />
-        <activity android:name=".viewpager.ViewPagerActivity" />
-        <activity android:name=".RotateMenu.RotateMenuActivity" />
-        <activity android:name=".customview.CustomViewActivity" />
-        <activity android:name=".customview.CanvasActivity" />
-        <activity android:name=".customview.PaintActivity" />
-        <activity android:name=".logger.LoggerActivity" />
-        <activity android:name=".eventbus.EventBusActivity" />
-        <activity android:name=".netroid.NetroidActivity" />
+        <activity android:name=".customview.viewpager.ViewPagerActivity" />
+        <activity android:name=".customview.RotateMenu.RotateMenuActivity" />
+        <activity android:name=".customview.Drawable.CustomViewActivity" />
+        <activity android:name=".customview.Drawable.CanvasActivity" />
+        <activity android:name=".customview.Drawable.PaintActivity" />
+        <activity android:name=".common.logger.LoggerActivity" />
+        <activity android:name=".common.eventbus.EventBusActivity" />
+        <activity android:name=".common.netroid.NetroidActivity" />
 
         <service
-            android:name=".netroid.DownLoadService"
+            android:name=".common.netroid.DownLoadService"
             android:enabled="true"
             android:exported="true" />
 
         <activity android:name=".customview.demo.WaterRippleActivity" />
-        <activity android:name=".fresco.FrescoActivity" />
+        <activity android:name=".common.fresco.FrescoActivity" />
         <activity
-            android:name=".pulltorefresh.samples.RefreshActivity"
+            android:name=".common.pulltorefresh.samples.RefreshActivity"
             android:label="PtR ListView" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshListActivity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshListActivity"
             android:label="PtR ListView" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshListInViewPagerActivity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshListInViewPagerActivity"
             android:label="PtR ListView in ViewPager" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshGridActivity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshGridActivity"
             android:label="PtR GridView" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshExpandableListActivity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshExpandableListActivity"
             android:label="PtR ExpandableListView" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshWebViewActivity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshWebViewActivity"
             android:label="PtR WebView" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshScrollViewActivity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshScrollViewActivity"
             android:label="PtR ScrollView" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshHorizontalScrollViewActivity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshHorizontalScrollViewActivity"
             android:label="PtR HorizontalScrollView" />
         <activity
-            android:name=".pulltorefresh.samples.PullToRefreshWebView2Activity"
+            android:name=".common.pulltorefresh.samples.PullToRefreshWebView2Activity"
             android:label="PtR WebView Advanced" />
         <activity android:name=".thirdparty.lottie.LottieActivity" />
         <activity android:name=".other.MaterialDesign.MaterialDesignActivity" />

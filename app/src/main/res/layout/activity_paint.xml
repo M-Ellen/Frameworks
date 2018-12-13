@@ -5,30 +5,30 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent">
-    <com.gotechcn.frameworks.customview.TestPaint
+    <com.gotechcn.frameworks.customview.Drawable.TestPaint
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
 
-<!--    <com.gotechcn.frameworks.customview.TestPathEffec
+<!--    <com.gotechcn.frameworks.customview.Drawable.TestPathEffec
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>-->
 
 
 <!--
 
-    <com.gotechcn.frameworks.customview.TestColorFilter
+    <com.gotechcn.frameworks.customview.Drawable.TestColorFilter
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
 -->
 
 <!--
-    <com.gotechcn.frameworks.customview.TestColorMatrix
+    <com.gotechcn.frameworks.customview.Drawable.TestColorMatrix
         android:background="@color/bg_color_blue"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 -->
 
-<!--    <com.gotechcn.frameworks.customview.TestMatrix
+<!--    <com.gotechcn.frameworks.customview.Drawable.TestMatrix
         android:background="@color/bg_color_blue"
         android:layout_width="match_parent"
         android:layout_height="400dp" />

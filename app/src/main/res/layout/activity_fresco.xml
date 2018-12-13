@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="5dp"
     android:orientation="horizontal"
-    tools:context="com.gotechcn.frameworks.fresco.FrescoActivity">
+    tools:context=".common.fresco.FrescoActivity">
 
     <Spinner
         android:id="@+id/spinner"

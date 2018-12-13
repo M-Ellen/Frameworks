@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.gotechcn.frameworks.json.GsonActivity">
+    tools:context=".common.json.GsonActivity">
 
     <include layout="@layout/titlebar"></include>
 

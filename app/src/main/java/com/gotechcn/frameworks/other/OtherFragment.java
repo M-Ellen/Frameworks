@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.gotechcn.frameworks.BaseFragment;
 import com.gotechcn.frameworks.R;
-import com.gotechcn.frameworks.fragment.CommonFrameFragmentAdapter;
+import com.gotechcn.frameworks.common.CommonFrameFragmentAdapter;
 import com.gotechcn.frameworks.other.MaterialDesign.MaterialDesignActivity;
 import com.gotechcn.frameworks.other.mvp.view.UserLoginActivity;
 

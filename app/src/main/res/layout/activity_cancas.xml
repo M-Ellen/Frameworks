@@ -5,17 +5,17 @@
     android:layout_height="match_parent">
     <!--android:background="@mipmap/canvas_bg"-->
 <!--
-    <com.gotechcn.frameworks.customview.CanvasDemo
+    <com.gotechcn.frameworks.customview.Drawable.CanvasDemo
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>-->
 
-    <!--<com.gotechcn.frameworks.customview.TestCanvas-->
+    <!--<com.gotechcn.frameworks.customview.Drawable.TestCanvas-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"/>-->
 
 
 
-    <com.gotechcn.frameworks.customview.TestPath
+    <com.gotechcn.frameworks.customview.Drawable.TestPath
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

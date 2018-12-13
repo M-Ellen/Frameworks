@@ -7,20 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.RadioGroup;
 
-import com.gotechcn.frameworks.fragment.CommonFrameFragment;
-import com.gotechcn.frameworks.fragment.CustomFragment;
+import com.gotechcn.frameworks.common.CommonFrameFragment;
+import com.gotechcn.frameworks.customview.CustomFragment;
 import com.gotechcn.frameworks.other.OtherFragment;
 import com.gotechcn.frameworks.thirdparty.ThirdPartyFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 作者：尚硅谷-杨光福 on 2016/7/21 18:42
- * 微信：yangguangfu520
- * QQ号：541433511
- * 作用：主页面
- */
 public class MainActivity  extends AppCompatActivity{
 
     private RadioGroup mRg_main;
