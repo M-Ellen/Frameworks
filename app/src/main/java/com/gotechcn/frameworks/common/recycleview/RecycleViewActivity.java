@@ -1,7 +1,7 @@
 package com.gotechcn.frameworks.common.recycleview;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,7 +15,7 @@ import com.gotechcn.frameworks.common.recycleview.itemanimation.SlideInOutBottom
 
 import java.util.ArrayList;
 
-public class RecycleViewActivity extends Activity implements View.OnClickListener {
+public class RecycleViewActivity extends AppCompatActivity implements View.OnClickListener {
     
     private Button mBtnadd;
     private Button mBtnbDelete;

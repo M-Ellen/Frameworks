@@ -1,11 +1,11 @@
 package com.gotechcn.frameworks.common.eventbus;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.gotechcn.frameworks.R;
 
-public class EventBusActivity extends Activity {
+public class EventBusActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,15 +1,15 @@
 package com.gotechcn.frameworks.customview.Drawable;
 
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.gotechcn.frameworks.R;
 
 /**
  * @author
  */
-public class PaintActivity extends Activity {
+public class PaintActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

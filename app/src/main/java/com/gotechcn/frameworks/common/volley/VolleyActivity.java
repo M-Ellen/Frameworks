@@ -1,9 +1,9 @@
 package com.gotechcn.frameworks.common.volley;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.util.LruCache;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,7 +33,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class VolleyActivity extends Activity implements View.OnClickListener {
+public class VolleyActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mBtnGet;
     private Button mBtnPost;

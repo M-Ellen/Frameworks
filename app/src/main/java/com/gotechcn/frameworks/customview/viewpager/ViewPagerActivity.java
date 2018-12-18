@@ -1,11 +1,11 @@
 package com.gotechcn.frameworks.customview.viewpager;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -16,7 +16,7 @@ import com.gotechcn.frameworks.R;
 
 import java.util.ArrayList;
 
-public class ViewPagerActivity extends Activity {
+public class ViewPagerActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private LinearLayout mGroupPoint;

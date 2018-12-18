@@ -94,7 +94,8 @@
             android:label="@string/title_activity_text_input_layout"
             android:theme="@style/AppTheme" />
         <activity android:name=".other.MaterialDesign.TabLayoutActivity" />
-        <activity android:name=".other.MaterialDesign.AnimationActivity"></activity>
+        <activity android:name=".other.MaterialDesign.AnimationActivity" />
+        <activity android:name=".common.rxjava.RxJavaActivity"></activity>
     </application>
 
 </manifest>

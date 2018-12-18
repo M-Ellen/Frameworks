@@ -57,4 +57,9 @@ dependencies {
      * add lottie-android
      */
     implementation 'com.airbnb.android:lottie:2.5.0'
+
+    /**
+     * add RxJava2
+     */
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
 }

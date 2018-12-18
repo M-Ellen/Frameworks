@@ -18,6 +18,7 @@ import com.gotechcn.frameworks.common.logger.LoggerActivity;
 import com.gotechcn.frameworks.common.okhttp.OkHttpActivity;
 import com.gotechcn.frameworks.common.pulltorefresh.samples.RefreshActivity;
 import com.gotechcn.frameworks.common.recycleview.RecycleViewActivity;
+import com.gotechcn.frameworks.common.rxjava.RxJavaActivity;
 import com.gotechcn.frameworks.common.volley.VolleyActivity;
 
 /**
@@ -92,6 +93,10 @@ public class CommonFrameFragment extends BaseFragment {
                     Intent intent = new Intent(mContext, RefreshActivity.class);
                     mContext.startActivity(intent);
                  }
+                else if (data.toLowerCase().equals("rxjava")) {
+                    Intent intent = new Intent(mContext, RxJavaActivity.class);
+                    mContext.startActivity(intent);
+                 }
 
                 // 点击位置的显示
                 Toast.makeText(mContext, "data==" + data, Toast.LENGTH_SHORT).show();
@@ -108,10 +113,10 @@ public class CommonFrameFragment extends BaseFragment {
 
         Log.e(TAG, "常用框架Fragment数据被初始化了...");
 
-        //准备数据
-        mDatas = new String[]{"Volley", "Json", "Gson", "FastJson","RecyclerView", "OkHttp", "Logger", "Afinal",
-                "Eventbus","Netroid", "Butterknife","Imageloader","Picasso","Retrofit2", "Fresco", "Glide", "greenDao",
-                "RxJava","jcvideoplayer", "pulltorefresh", "Expandablelistview", "UniversalVideoView", "....."};
+        //准备数据  "Afinal","Picasso","greenDao","jcvideoplayer", "UniversalVideoView",
+        mDatas = new String[]{"Volley", "Json", "Gson", "FastJson","RecyclerView", "OkHttp", "Logger",
+                "Eventbus","Netroid", "Butterknife","Imageloader","Retrofit2", "Fresco", "Glide",
+                "RxJava","pulltorefresh", "Expandablelistview", "....."};
 
         //设置适配器
         adapter = new CommonFrameFragmentAdapter(mContext, mDatas);

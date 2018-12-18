@@ -42,7 +42,8 @@ public class CollapsingToolbarActivity extends AppCompatActivity {
 		 * 设置 伸张 、折叠字体的颜色
 		 */
 		collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar_layout);
-		collapsingToolbarLayout.setTitle("CollapsingToolbarLayout");
+//		collapsingToolbarLayout.setTitle("CollapsingToolbarLayout");
+		collapsingToolbarLayout.setTitle("Collap");
 
 		collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.colorAccent));
 		collapsingToolbarLayout.setCollapsedTitleTextColor(getResources().getColor(android.R.color.white));

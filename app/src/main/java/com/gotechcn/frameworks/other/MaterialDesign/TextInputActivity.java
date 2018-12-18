@@ -9,11 +9,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.gotechcn.frameworks.R;
+import com.gotechcn.frameworks.other.ClearEditText;
 
 public class TextInputActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextInputLayout mNameInputLayout, mPswInputLayout;
-    private TextInputEditText mNameEt,mPswEt;
+    private ClearEditText mNameEt;
+    private TextInputEditText mPswEt;
 
     private Button commitBtn;
 

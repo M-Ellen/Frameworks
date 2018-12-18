@@ -1,7 +1,7 @@
 package com.gotechcn.frameworks.customview.RotateMenu;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 
 import com.gotechcn.frameworks.R;
 
-public class RotateMenuActivity extends Activity implements View.OnClickListener {
+public class RotateMenuActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView mMenu;
     private ImageView mHome;

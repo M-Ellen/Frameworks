@@ -1,7 +1,7 @@
 package com.gotechcn.frameworks.common.logger;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.gotechcn.frameworks.R;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class LoggerActivity extends Activity {
+public class LoggerActivity extends AppCompatActivity {
 
     private static final String TAG = "Log";
 

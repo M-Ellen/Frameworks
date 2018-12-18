@@ -1,7 +1,8 @@
 package com.gotechcn.frameworks.common.json;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -27,9 +28,9 @@ import java.util.List;
  * （4）特殊json数据解析
  */
 
-public class JsonActivity extends Activity implements View.OnClickListener {
+public class JsonActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView tv_title;
+    private Toolbar mToolbar;
     private Button bt_native_tojavaobject;
     private Button bt_native_tojavalist;
     private Button bt_native_complex;
@@ -57,9 +58,10 @@ public class JsonActivity extends Activity implements View.OnClickListener {
     }
 
     private void initView() {
-        // 修改头布局显示
-        tv_title = (TextView) findViewById(R.id.tv_title);
-        tv_title.setText("手动JSON解析");
+        // 获取标题对象
+        mToolbar = findViewById(R.id.toolbar);
+        mToolbar.setTitle("手动JSON解析");
+        setSupportActionBar(mToolbar);
 
         // 获取button对象
         bt_native_tojavaobject = (Button) findViewById(R.id.bt_native_tojavaobject);

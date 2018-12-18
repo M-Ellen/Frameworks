@@ -1,7 +1,8 @@
 package com.gotechcn.frameworks.common.json;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,9 +15,9 @@ import com.gotechcn.frameworks.common.json.bean.ShopInfo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GsonActivity extends Activity implements View.OnClickListener {
+public class GsonActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView tv_title;
+    private Toolbar mToolbar;
     private Button bt_gson_tojavaobject;
     private Button bt_gson_tojavalist;
     private Button bt_gson_javatojsonobject;
@@ -47,8 +48,9 @@ public class GsonActivity extends Activity implements View.OnClickListener {
     // cch初始化view
     private void initView() {
         // 获取标题对象
-        tv_title = (TextView) findViewById(R.id.tv_title);
-        tv_title.setText("Gson解析");
+        mToolbar = findViewById(R.id.toolbar);
+        mToolbar.setTitle("Gson解析");
+        setSupportActionBar(mToolbar);
 
         // 获取4个button对象
         bt_gson_tojavaobject = (Button) findViewById(R.id.bt_gson_tojavaobject);

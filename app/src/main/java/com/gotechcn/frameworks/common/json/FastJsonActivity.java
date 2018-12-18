@@ -1,7 +1,8 @@
 package com.gotechcn.frameworks.common.json;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,9 +14,9 @@ import com.gotechcn.frameworks.common.json.bean.ShopInfo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FastJsonActivity extends Activity implements View.OnClickListener {
+public class FastJsonActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView tv_title;
+    private Toolbar mToolbar;
     private Button bt_fastjson_tojavaobject;
     private Button bt_fastjson_tojavalist;
     private Button bt_fastjson_javatojsonobject;
@@ -44,8 +45,9 @@ public class FastJsonActivity extends Activity implements View.OnClickListener {
     private void initView() {
 
         // 获取标题对象
-        tv_title = (TextView)findViewById(R.id.tv_title);
-        tv_title.setText("FastJson解析");
+        mToolbar = findViewById(R.id.toolbar);
+        mToolbar.setTitle("FastJson解析");
+        setSupportActionBar(mToolbar);
 
         // 获取4个button对象
         bt_fastjson_tojavaobject = (Button)findViewById(R.id.bt_fastjson_tojavaobject);

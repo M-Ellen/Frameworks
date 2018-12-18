@@ -1,15 +1,15 @@
 package com.gotechcn.frameworks.customview.Drawable;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 import com.gotechcn.frameworks.R;
 
-public class CustomViewActivity extends Activity implements View.OnClickListener {
+public class CustomViewActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mTv1;
     private TextView mTv2;

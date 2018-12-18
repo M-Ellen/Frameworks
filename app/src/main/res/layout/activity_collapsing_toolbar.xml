@@ -15,8 +15,7 @@
             android:id="@+id/collapsing_toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:expandedTitleMarginEnd="64dp"
-            app:expandedTitleMarginStart="48dp"
+
             app:contentScrim="@color/colorPrimary"
             app:statusBarScrim="@color/bg_color_blue"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
@@ -34,6 +33,7 @@
                 android:id="@+id/toolbar_collapsing_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
                 app:layout_collapseMode="pin"/>
 
         </android.support.design.widget.CollapsingToolbarLayout>

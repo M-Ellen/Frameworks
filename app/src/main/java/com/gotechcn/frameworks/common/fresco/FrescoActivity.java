@@ -1,12 +1,12 @@
 package com.gotechcn.frameworks.common.fresco;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Animatable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.controller.BaseControllerListener;
@@ -26,7 +26,7 @@ import com.gotechcn.frameworks.R;
 /**
  * @author pzm
  */
-public class FrescoActivity extends Activity {
+public class FrescoActivity extends AppCompatActivity {
 
     private static final String[] FRESCO_TYPE = {"加载图","占位图","占位图","占位图","占位图","占位图"};
     Uri uri1 = Uri.parse("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2944094007,2505799703&fm=27&gp=0.jpg");
