@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--rx-->
+    <string name="doSomething">doSomething</string>
+    <string name="rx_create">create、just、fromXxx</string>
+    <string name="rx_defer">defer</string>
+    <string name="rx_timer_interval">timer、interval</string>
+    <string name="rx_range">range</string>
+    <string name="rx_zip">zip</string>
+    <string name="rx_combineLatest">combineLatest</string>
+    <!--<string name="rx_map">map</string>-->
+    <string name="rx_map">map、flatMap、concatMap</string>
+    <string name="rx_flatMap">flatMap</string>
+    <string name="rx_concatMap">concatMap</string>
+    <string name="rx_doXxx">doXxx</string>
+    <string name="rx_onErrorXxx">onErrorXxx</string>
+    <string name="rx_retryXxx">retryXxx</string>
+    <string name="rx_repeatXxx">repeatXxx</string>
+    <string name="rx_filter">filter</string>
+    <string name="rx_ofType">ofType</string>
+    <string name="rx_skip">skip</string>
+    <string name="rx_take">take</string>
+    <!--<string name="rx_interval">interval</string>-->
+    <!--<string name="rx_just">just</string>-->
+    <string name="rx_from_array">fromArray</string>
+    <string name="rx_single">single</string>
+    <string name="rx_concat">concat、concatArray</string>
+    <string name="rx_distinct">distinct</string>
+    <string name="rx_buffer">buffer</string>
+    <string name="rx_debounce">debounce</string>
+    <string name="rx_last">last</string>
+    <string name="rx_merge">merge、mergeArray</string>
+    <string name="rx_reduce">reduce</string>
+    <string name="rx_collect">collect</string>
+    <string name="rx_startWith">startWith、startWithArray</string>
+    <string name="rx_count">count</string>
+    <string name="rx_scan">scan</string>
+    <string name="rx_window">window</string>
+    <string name="rx_PublishSubject">PublishSubject</string>
+    <string name="rx_AsyncSubject">AsyncSubject</string>
+    <string name="rx_BehaviorSubject">BehaviorSubject</string>
+    <string name="rx_Completable">Completable</string>
+    <string name="rx_Flowable">Flowable</string>
+
+    <string name="rx_create_des">可用于获取一个被观察的对象</string>
+    <string name="rx_range_des">可以指定发送起点和数量，每次递增1</string>
+    <string name="rx_zip_des">合并事件专用,分别从两个上游事件中各取出一个组合,一个事件只能被使用一次，顺序严格按照事件发送的顺序,
+        最终下游事件收到的是和上游事件最少的数目相同（必须两两配对，多余的舍弃)
+    </string>
+    <string name="rx_combineLatest_des">合并事件专用,当两个Observables中的任何一个发送了数据后，
+        将先发送了数据的Observables 的最新（最后）一个数据 与 另外一个Observable发送的每个数据结合，最终合并后再发送数据
+    </string>
+    <string name="rx_map_des">基本是RxJava 最简单的操作符了作用是对上游发送的每一个事件应用一个函数，使得每一个事件都按照指定的函数去变化</string>
+    <string name="rx_flatMap_des">FlatMap将一个发送事件的上游Observable变换成多个发送事件的Observables，
+        然后将它们发射的时间合并后放进一个单独的Observable里
+    </string>
+    <string name="rx_concatMap_des">concatMap作用和flatMap几乎一模一样，唯一的区别是它能保证事件的顺序</string>
+    <string name="rx_doXxx_des">在某个事件的对应的生命周期中调用</string>
+    <string name="rx_onErrorXxx_des">在发送事件过程中，遇到错误时的处理机制</string>
+    <string name="rx_retryXxx_des">在发送事件过程中，遇到错误时,重新发射事件</string>
+    <string name="rx_repeatXxx_des">重复发射事件</string>
+    <string name="rx_filter_des">过滤操作符，取正确的值</string>
+    <string name="rx_skip_des">接受一个long型参数，代表跳过多少个数目的事件再开始接收</string>
+    <string name="rx_take_des">用于指定订阅者最多收到多少数据</string>
+    <string name="rx_timer_interval_des">在Rxjava中timer 操作符既可以延迟执行一段逻辑，也可以间隔执行一段逻辑\n【注意】但在RxJava
+        2.x已经过时了，现在用interval操作符来间隔执行，详见RxIntervalActivity\n
+        timer和interval都默认执行在一个新线程上。
+    </string>
+    <string name="rx_interval_des">间隔执行操作，默认在新线程</string>
+    <string name="rx_just_des">just操作符，就是接受一个可变参数，依次发送</string>
+    <string name="rx_fromarray_des">fromArray操作符，就是数组，依次发送</string>
+    <string name="rx_single_des">顾名思义，Single只会接收一个参数, 而SingleObserver只会调用onError或者onSuccess"
+    </string>
+    <string name="rx_concat_des">连接操作符，可接受Observable的可变参数，或者Observable的集合,串行处理事件</string>
+    <string name="rx_distinct_des">去重操作符，其实就是简单的去重</string>
+    <string name="rx_buffer_des">buffer(count, skip)` 从定义就差不多能看出作用了，将 observable 中的数据按
+        skip（步长）分成最长不超过 count 的 buffer，然后生成一个 observable
+    </string>
+    <string name="rx_debounce_des">过滤掉发射速率过快的数据项</string>
+    <string name="rx_defer_des">就是在每次订阅的时候就会创建一个新的 Observable</string>
+    <string name="rx_last_des">取出最后一个值，参数是没有值的时候的默认值</string>
+    <string name="rx_merge_des">将多个Observable合起来，接受可变参数，也支持使用迭代器集合，并行处理事件</string>
+    <string name="rx_reduce_des">把被观察者需要发送的事件聚合成1个事件，即先处理前面2个数据，得到结果再和后面的数据结合，再发送</string>
+    <string name="rx_collect_des">将被观察者Observable发送的数据事件收集到一个自定义的数据结构</string>
+    <string name="rx_startWith_des">在一个被观察者发送事件前，追加发送一些数据 / 一个新的被观察者，注：追加的数据先执行</string>
+    <string name="rx_count_des">统计被观察者发送事件的数量</string>
+    <string name="rx_scan_des">和上面的reduce差不多，区别在于reduce()只输出结果，而scan()会将过程中每一个结果输出</string>
+    <string name="rx_window_des">按照时间划分窗口，将数据发送给不同的Observable</string>
+    <string name="rx_PublishSubject_des">onNext() 会通知每个观察者，仅此而已</string>
+    <string name="rx_AsyncSubject_des">在调用 onComplete() 之前，除了 subscribe() 其它的操作都会被缓存，在调用
+        onComplete() 之后只有最后一个 onNext() 会生效
+    </string>
+    <string name="rx_BehaviorSubject_des">BehaviorSubject 的最后一次 onNext() 操作会被缓存，然后在 subscribe()
+        后立刻推给新注册的 Observer
+    </string>
+    <string name="rx_Completable_des">只关心结果，也就是说 Completable 是没有 onNext 的，要么成功要么出错，不关心过程，在 subscribe
+        后的某个时间点返回结果
+    </string>
+    <string name="rx_Flowable_des">专用于解决背压问题</string>
+</resources>

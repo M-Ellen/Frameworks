@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".common.rxjava.RxJavaActivity">
 
+    <GridView
+        android:id="@+id/rxjava_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="1">
+    </GridView>
+
 </RelativeLayout>

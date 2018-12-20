@@ -95,7 +95,24 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".other.MaterialDesign.TabLayoutActivity" />
         <activity android:name=".other.MaterialDesign.AnimationActivity" />
-        <activity android:name=".common.rxjava.RxJavaActivity"></activity>
+        <activity android:name=".common.rxjava.RxJavaActivity" />
+        <activity android:name=".common.rxjava.RxCreateActivity" />
+        <activity android:name=".common.rxjava.RxDeferActivity" />
+        <activity android:name=".common.rxjava.RxIntervalActivity" />
+        <activity android:name=".common.rxjava.RxRangeActivity" />
+        <activity android:name=".common.rxjava.RxMapActivity" />
+        <activity android:name=".common.rxjava.RxBufferActivity" />
+        <activity android:name=".common.rxjava.RxConcatActivity" />
+        <activity android:name=".common.rxjava.RxMergeActivity" />
+        <activity android:name=".common.rxjava.RxZipActivity" />
+        <activity android:name=".common.rxjava.RxCombineLatestActivity" />
+        <activity android:name=".common.rxjava.RxReduceActivity" />
+        <activity android:name=".common.rxjava.RxFilterActivity" />
+        <activity android:name=".common.rxjava.RxDoXxxActivity" />
+        <activity android:name=".common.rxjava.RxOnErrorXxxActivity" />
+        <activity android:name=".common.rxjava.RxRetryXxxActivity" />
+        <activity android:name=".common.rxjava.RxRepeatXxxActivity" />
+        <activity android:name=".common.rxjava.RxFlowableActivity"></activity>
     </application>
 
 </manifest>
